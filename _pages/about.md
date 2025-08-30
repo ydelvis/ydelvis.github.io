@@ -1,34 +1,44 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Spaulding-Smith Fellow  | University of Massachusetts, Amherst
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic_elvis.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Office: E250 CSL Building</p>
+    <p>140 Governors Dr</p>
+    <p> Amherst, MA 01003</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+> 🔒 *"Trust, but verify..."* — Security philosophy
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Hello! I am a PhD Student in Computer Science with a research focus on security and privacy in modern computing systems. My work seeks to design and evaluate mechanisms that make complex infrastructures—such as cloud platforms, serverless computing environments, and IoT ecosystems—both secure and usable.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am particularly interested in approaches that ensure least-privilege access control and data privacy, while also making security controls more intuitive for users and developers. My research often explores information flow control and other policy-driven techniques to reduce risks in distributed and cloud-based architectures.
+
+Beyond cloud and serverless platforms, I also investigate challenges in IoT security and usable security, emphasizing practical solutions that balance technical robustness with human-centered design.
+
+🎯 Research Interests
+* Systems Security (Cloud, Serverless, IBN & IoT)
+* Least-Privilege Access Control
+* Information Flow Control
+* Data Privacy
+
+Advised by [Prof. Pubali Datta](https://people.cs.umass.edu/~pdatta/)

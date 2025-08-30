@@ -1,12 +1,11 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: Graduate Teaching Assistant
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+## Fall 2025
+[COMPSCI 560](https://infosec.cs.umass.edu/compsci560) - Introduction to Computer & Network Security, by [Dr. Parviz Kermani](https://www.cics.umass.edu/about/directory/parviz-kermani)
