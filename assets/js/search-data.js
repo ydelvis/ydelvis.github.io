@@ -9,19 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "publications",
-          description: "Research papers in security, privacy, and networked systems.",
+  },{id: "nav-research",
+          title: "Research",
+          description: "Research projects in systems security, cloud, IoT, and networked systems.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/research/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
@@ -30,15 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Research projects in systems security, cloud, IoT, and networked systems.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-news",
-          title: "news",
+          title: "News",
           description: "Announcements and updates.",
           section: "Navigation",
           handler: () => {
@@ -418,8 +404,8 @@ ninja.data = [{
           section: "News",},{id: "news-awarded-the-jim-gray-scholarship-in-computer-science-at-umass-amherst-established-in-honor-of-renowned-computer-scientist-jim-gray-and-supporting-first-year-graduate-student-research-in-systems",
           title: 'Awarded the Jim Gray Scholarship in Computer Science at UMass Amherst, established in...',
           description: "",
-          section: "News",},{id: "news-gave-a-guest-talk-at-the-capture-the-flag-program-at-the-college-of-information-and-computer-sciences-cics-umass-amherst-spring-2025",
-          title: 'Gave a guest talk at the Capture the Flag program at the College...',
+          section: "News",},{id: "news-guest-speaker-at-the-2025-capture-the-flag-program-at-the-college-of-information-and-computer-sciences-cics-umass-amherst-spring-2025",
+          title: 'Guest Speaker at the 2025 Capture the Flag program at the College of...',
           description: "",
           section: "News",},{id: "news-selected-as-graduate-mentor-of-the-ids-stempower-fellowship-program-for-2025-2026",
           title: 'Selected as Graduate Mentor of the IDS STEMPOWER Fellowship Program for 2025-2026!',
@@ -427,21 +413,41 @@ ninja.data = [{
           section: "News",},{id: "news-selected-for-the-inclusive-leadership-fellowship-program-at-umass-amherst-starting-fall-2026-a-program-training-graduate-students-in-leadership-and-institutional-change-making-to-foster-a-more-inclusive-campus",
           title: 'Selected for the Inclusive Leadership Fellowship Program at UMass Amherst (starting Fall 2026),...',
           description: "",
-          section: "News",},{id: "projects-access-control-for-serverless-cloud",
+          section: "News",},{id: "news-poster-presentation-accepted-to-new-england-security-day-nesd-conference-at-umass-amherst",
+          title: 'Poster Presentation accepted to New England Security Day (NESD) Conference at UMass Amherst!...',
+          description: "",
+          section: "News",},{id: "news-presented-privless-an-overprivilege-analysis-framework-for-assessing-least-privilege-access-control-and-code-functionality-at-the-new-england-security-day-nesd-2026-conference-at-umass-amherst-march-2026",
+          title: 'Presented PrivLess, an overprivilege analysis framework for assessing least-privilege access control and code...',
+          description: "",
+          section: "News",},{id: "news-student-mentee-presents-research-on-leveraging-llm-based-coding-agents-for-iam-policy-generation-and-refinement-at-the-massachusetts-undergraduate-research-conference-massurc-2026-at-umass-amherst-april-2026",
+          title: 'Student mentee presents research on leveraging LLM-based coding agents for IAM policy generation...',
+          description: "",
+          section: "News",},{id: "news-volunteered-as-a-judge-at-the-massachusetts-science-amp-amp-engineering-fair-msef-middle-school-state-fair-2026-at-clark-university-worcester-ma-may-2026",
+          title: 'Volunteered as a Judge at the Massachusetts Science &amp;amp;amp; Engineering Fair (MSEF) Middle...',
+          description: "",
+          section: "News",},{id: "news-completed-the-research-mentor-training-for-stem-graduate-students-amp-amp-postdocs-offered-by-the-umass-amherst-graduate-school-may-2026",
+          title: 'Completed the Research Mentor Training for STEM Graduate Students &amp;amp;amp; Postdocs offered by...',
+          description: "",
+          section: "News",},{id: "research-access-control-amp-security-of-ai-agents",
+          title: 'Access Control &amp;amp; Security of AI Agents',
+          description: "Enforcing least-privilege and auditable access for LLM-based autonomous agents",
+          section: "Research",handler: () => {
+              window.location.href = "/research/ai_agent_security/";
+            },},{id: "research-access-control-for-serverless-cloud",
           title: 'Access Control for Serverless Cloud',
           description: "Detecting and mitigating overprivilege in cloud security policies",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/cloud_access_control/";
-            },},{id: "projects-intent-based-networking-amp-security",
+          section: "Research",handler: () => {
+              window.location.href = "/research/cloud_access_control/";
+            },},{id: "research-intent-based-networking-amp-security",
           title: 'Intent-Based Networking &amp;amp; Security',
           description: "Resolving conflicts and enforcing security in multi-intent network policies",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/intent_based_networking/";
-            },},{id: "projects-iot-security-amp-abandonware",
+          section: "Research",handler: () => {
+              window.location.href = "/research/intent_based_networking/";
+            },},{id: "research-iot-security-amp-abandonware",
           title: 'IoT Security &amp;amp; Abandonware',
           description: "Security risks of devices whose vendors have ceased support",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/iot_security/";
+          section: "Research",handler: () => {
+              window.location.href = "/research/iot_security/";
             },},{
         id: 'social-email',
         title: 'email',
