@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Research papers in security, privacy, and networked systems.
-nav: true
+nav: false
 nav_order: 1
 ---
 
