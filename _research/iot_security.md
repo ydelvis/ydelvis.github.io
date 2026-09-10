@@ -5,7 +5,7 @@ description: Security risks of devices whose vendors have ceased support
 img: assets/img/banner_iot_security.jpg
 importance: 4
 category: research
-related_publications: false
+related_publications: true
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/banner_iot_security.jpg" class="img-fluid rounded z-depth-1 mb-4" alt="City lights from space representing the global scale of IoT connectivity" %}
@@ -22,4 +22,4 @@ Our work explores detection, measurement, and responsible disclosure strategies 
 
 #### Related Work
 
-- *When Apps Outlive Vendors: Security Implications of IoT Abandonware* — Under Review, USENIX Security 2026
+{% cite kang2026iot %}
