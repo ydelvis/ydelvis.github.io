@@ -28,6 +28,12 @@ education:
 
 office_address: "CSL E250 · 130 Governors Drive, Amherst, MA"
 
+status_items:
+  - tag: Seeking
+    text: Summer Internships for 2027
+  - tag: Open to
+    text: Collaborations within the scope of my work
+
 social: true
 ---
 

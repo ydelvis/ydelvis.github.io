@@ -109,6 +109,23 @@ layout: default
       </div>
     </div>
 
+    {% if page.status_items %}
+      <div class="bento-status-banner">
+        <div class="bento-status-indicator">
+          <span class="bento-status-dot"></span>
+          <span class="bento-status-label">Status</span>
+        </div>
+        <div class="bento-status-items">
+          {% for item in page.status_items %}
+            <div class="bento-status-item">
+              <span class="bento-status-item-tag">{{ item.tag }}</span>
+              <span class="bento-status-item-text">{{ item.text }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
     <!-- News -->
     <div class="bento-card bento-card--news">
       <div class="bento-label">News</div>
@@ -146,6 +163,7 @@ layout: default
     </div>
 
   </div>
+
 </div>
 
 <script defer src="{{ '/assets/js/bento-bg.js' | relative_url | bust_file_cache }}"></script>

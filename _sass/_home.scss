@@ -205,6 +205,80 @@ html[data-theme="dark"] {
   grid-column: span 6;
 }
 
+.bento-status-banner {
+  grid-column: span 6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+  border: 1px solid var(--home-border);
+  border-left: 3px solid var(--home-accent);
+  border-radius: 10px;
+  background: var(--home-bg-alt);
+  padding: 20px 28px;
+}
+
+.bento-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.bento-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--home-accent);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--home-accent) 55%, transparent);
+  animation: bento-status-pulse 2.2s ease-out infinite;
+}
+
+@keyframes bento-status-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--home-accent) 55%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 8px color-mix(in srgb, var(--home-accent) 0%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--home-accent) 0%, transparent);
+  }
+}
+
+.bento-status-label {
+  font-family: var(--home-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--home-muted);
+}
+
+.bento-status-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  flex: 1;
+}
+
+.bento-status-item {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  font-size: 14.5px;
+}
+
+.bento-status-item-tag {
+  font-family: var(--home-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--home-accent);
+  white-space: nowrap;
+}
+
 @media (min-width: 768px) {
   .bento-card--intro {
     grid-column: span 4;
