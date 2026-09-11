@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-service",
+          title: "Service",
+          description: "Academic service, mentoring, and community engagement",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/service/";
+          },
         },{id: "nav-news",
           title: "News",
           description: "Announcements and updates.",
@@ -449,7 +456,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "research-ai-agent-security-and-access-control",
           title: 'AI Agent Security and Access Control',
-          description: "Enforcing least-privilege and auditable access for LLM-based autonomous agents",
+          description: "Enforcing least-privilege authorization and auditable access for LLM-based autonomous agents",
           section: "Research",handler: () => {
               window.location.href = "/research/ai_agent_security/";
             },},{id: "research-serverless-cloud-security",
@@ -459,7 +466,7 @@ ninja.data = [{
               window.location.href = "/research/cloud_access_control/";
             },},{id: "research-network-security",
           title: 'Network Security',
-          description: "Securing network infrastructure against misconfiguration and conflicting policy across intent-driven and traditional architectures",
+          description: "Securing network infrastructure against misconfiguration and conflicting policy across intent-driven and traditional network architectures",
           section: "Research",handler: () => {
               window.location.href = "/research/intent_based_networking/";
             },},{id: "research-iot-security",
@@ -467,6 +474,36 @@ ninja.data = [{
           description: "Security and privacy risks across the IoT device lifecycle, from deployment to end-of-support",
           section: "Research",handler: () => {
               window.location.href = "/research/iot_security/";
+            },},{id: "service-departmental-amp-university-service",
+          title: 'Departmental &amp;amp; University Service',
+          description: "Committees and institutional service",
+          section: "Service",handler: () => {
+              window.location.href = "/service/departmental/";
+            },},{id: "service-mentoring-amp-advising",
+          title: 'Mentoring &amp;amp; Advising',
+          description: "Graduate and undergraduate mentoring",
+          section: "Service",handler: () => {
+              window.location.href = "/service/mentoring/";
+            },},{id: "service-workshop-amp-event-organizing",
+          title: 'Workshop &amp;amp; Event Organizing',
+          description: "Organizing workshops, sessions, and events",
+          section: "Service",handler: () => {
+              window.location.href = "/service/organizing/";
+            },},{id: "service-outreach-amp-volunteering",
+          title: 'Outreach &amp;amp; Volunteering',
+          description: "Community and pre-college outreach",
+          section: "Service",handler: () => {
+              window.location.href = "/service/outreach/";
+            },},{id: "service-program-committees-amp-reviewing",
+          title: 'Program Committees &amp;amp; Reviewing',
+          description: "Conference and journal reviewing",
+          section: "Service",handler: () => {
+              window.location.href = "/service/reviewing/";
+            },},{id: "service-talks",
+          title: 'Talks',
+          description: "Invited talks and guest lectures",
+          section: "Service",handler: () => {
+              window.location.href = "/service/talks/";
             },},{
         id: 'social-email',
         title: 'email',
