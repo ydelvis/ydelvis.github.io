@@ -1,0 +1,149 @@
+---
+layout: default
+---
+<div class="bento-home">
+  <canvas id="bento-bg" class="bento-bg" aria-hidden="true"></canvas>
+  <div class="bento-grid">
+
+    <!-- Intro -->
+    <div class="bento-card bento-card--intro">
+      <div class="bento-intro-header">
+        {% if site.avatar %}
+          {% assign profile_image_path = site.avatar | prepend: 'assets/img/' %}
+          {% assign avatar_alt = site.first_name | append: ' ' | append: site.last_name %}
+          {% include figure.liquid loading="eager" path=profile_image_path class="bento-avatar" alt=avatar_alt cache_bust=true %}
+        {% endif %}
+        <div class="bento-intro-heading">
+          <div class="bento-eyebrow">PhD student &mdash; security &amp; systems</div>
+          <h1 class="bento-name">
+            {% if site.title == 'blank' %}
+              {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+            {% else %}
+              {{ site.title }}
+            {% endif %}
+          </h1>
+          <div class="bento-tagline">
+            {{ page.subtitle }}
+            {% if page.subtitle_line2 %}<br>{{ page.subtitle_line2 }}{% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="bento-summary">{{ content }}</div>
+      {% if page.advisor %}
+        <div class="bento-advisor">
+          Advised by
+          {% if page.advisor_url %}
+            <a href="{{ page.advisor_url }}">{{ page.advisor }}</a>
+          {% else %}
+            {{ page.advisor }}
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if page.research_tags %}
+        <div class="bento-tags">
+          {% for tag in page.research_tags %}
+            <span class="bento-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="bento-intro-footer">
+        {% if site.cv_pdf %}
+          <a
+            href="{{ site.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bento-resume-btn"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v12"></path>
+              <path d="M7 10l5 5 5-5"></path>
+              <path d="M5 21h14"></path>
+            </svg>
+            <span>Resume</span>
+          </a>
+        {% endif %}
+        {% if page.social %}
+          <div class="social bento-intro-social">
+            <div class="contact-icons">{% include social.liquid %}</div>
+            <div class="contact-note">{{ site.contact_note }}</div>
+          </div>
+        {% endif %}
+      </div>
+
+      {% if page.office_address %}
+        <div class="bento-address">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>{{ page.office_address }}</span>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="bento-side-stack">
+      <!-- Education -->
+      {% if page.education %}
+        <div class="bento-card bento-card--edu">
+          <div class="bento-label">Education</div>
+          <div class="bento-edu-list">
+            {% for edu in page.education %}
+              <div class="bento-edu-item">
+                <div class="bento-edu-degree">{{ edu.degree }}</div>
+                <div class="bento-edu-school">{{ edu.school }}</div>
+                <div class="bento-edu-period">{{ edu.period }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+
+      <!-- Latest publication (auto-pulled from _bibliography/papers.bib: the topmost entry) -->
+      <div class="bento-card bento-card--pub">
+        <div class="publications">
+          {% bibliography --max 1 --group_by none --template bib_featured %}
+        </div>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div class="bento-card bento-card--news">
+      <div class="bento-label">News</div>
+      <div class="bento-news-list">
+        {% assign news_items = site.news | reverse %}
+        {% for item in news_items limit: 6 %}
+          {% assign cat = 'update' %}
+          {% assign body = item.content %}
+          {% if body contains 'accepted' or body contains 'Accepted' %}
+            {% assign cat = 'publication' %}
+          {% endif %}
+          {% if body contains 'Travel grant' or body contains 'Awarded' or body contains 'Selected for' or body contains 'Honored' or body contains 'Scholarship' or body contains 'Fellowship' %}
+            {% assign cat = 'award' %}
+          {% endif %}
+          {% if body contains 'Presented' or body contains 'Guest Speaker' or body contains 'Volunteered as a Judge' %}
+            {% assign cat = 'talk' %}
+          {% endif %}
+          {% if body contains 'Teaching Assistant' or body contains 'TA for' %}
+            {% assign cat = 'teaching' %}
+          {% endif %}
+          <div class="bento-news-item">
+            <span class="bento-dot bento-dot--{{ cat }}"></span>
+            <div class="bento-news-text">
+              <span class="bento-news-date">{{ item.date | date: '%b' }}</span>
+              {% if item.inline %}
+                <span>{{ item.content | strip_html | strip }}</span>
+              {% else %}
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <a href="{{ '/news/' | relative_url }}" class="bento-cta">All updates</a>
+    </div>
+
+  </div>
+</div>
+
+<script defer src="{{ '/assets/js/bento-bg.js' | relative_url | bust_file_cache }}"></script>

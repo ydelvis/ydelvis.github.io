@@ -30,6 +30,9 @@
   type="text/css"
   href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
 >
+{% if page.layout == 'home' %}
+  <link defer rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&display=swap">
+{% endif %}
 
 <!-- Code Syntax Highlighting -->
 <link

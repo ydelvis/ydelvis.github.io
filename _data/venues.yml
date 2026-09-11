@@ -1,5 +1,11 @@
+"ACM CCS":
+  color: "var(--home-accent)"
+
+"arXiv":
+  color: "var(--home-talk)"
+
 "NetSoft":
-  color: "#00629B"
+  color: "var(--home-accent)"
 
 "USENIX Sec":
-  color: "#9B2000"
+  color: "var(--home-accent)"

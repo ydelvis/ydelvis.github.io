@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <article>
+    {% for role in page.roles %}
+      <h2 class="teaching-role-heading">{{ role.name }}</h2>
+      <div class="teaching-list">
+        {% for course in role.courses %}
+          <div class="teaching-item">
+            <span class="bento-badge teaching-term">{{ course.term }}</span>
+            <div class="teaching-body">
+              {% if course.code %}
+                <div>
+                  {%- if course.url -%}
+                    <a href="{{ course.url }}" class="teaching-course">{{ course.code }}</a>
+                  {%- else -%}
+                    <span class="teaching-course">{{ course.code }}</span>
+                  {%- endif -%}
+                  {%- if course.name %} &mdash; {{ course.name }}{% endif -%}
+                  {%- if course.instructor %}, by
+                    {%- if course.instructor_url %} <a href="{{ course.instructor_url }}">{{ course.instructor }}</a>
+                    {%- else %} {{ course.instructor }}
+                    {%- endif -%}
+                  {%- endif -%}
+                </div>
+                {% if course.school %}
+                  <div class="teaching-school">{{ course.school }}</div>
+                {% endif %}
+              {% elsif course.school %}
+                <span class="teaching-course">{{ course.school }}</span>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </article>
+</div>

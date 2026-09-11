@@ -1,0 +1,14 @@
+---
+---
+<div class="bento-label">Latest publication</div>
+{% if entry.abbr %}
+  <span class="bento-badge">{{ entry.abbr }}{% if entry.year %} {{ entry.year }}{% endif %}</span>
+{% endif %}
+<h2 class="bento-pub-title"><a href="{{ '/publications/' | relative_url }}#{{ entry.key }}">{{ entry.title }}</a></h2>
+<div class="bento-pub-authors">
+  {%- for author in entry.author_array -%}
+    {{ author.last }}{% unless forloop.last %}, {% endunless %}
+  {%- endfor -%}
+</div>
+<div class="bento-spacer"></div>
+<a href="{{ '/publications/' | relative_url }}#{{ entry.key }}" class="bento-cta">Read the paper</a>

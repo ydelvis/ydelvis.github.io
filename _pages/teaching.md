@@ -1,14 +1,38 @@
 ---
-layout: page
+layout: teaching
 permalink: /teaching/
 title: Teaching
 description: Graduate Teaching Assistant
 nav: true
 nav_order: 4
+
+roles:
+  - name: Graduate Teaching Assistant
+    courses:
+      - term: Fall 2026
+        code: COMPSCI 453
+        name: Computer Networks
+        url: https://453.fyi/
+        instructor: Phuthipong Bovornkeeratiroj
+        instructor_url: https://people.cs.umass.edu/~phuthipong/
+        school: University of Massachusetts, Amherst
+      - term: Fall 2025
+        code: COMPSCI 560
+        name: Introduction to Computer & Network Security
+        url: https://infosec.cs.umass.edu/compsci560
+        instructor: Dr. Parviz Kermani
+        instructor_url: https://www.cics.umass.edu/about/directory/parviz-kermani
+        school: University of Massachusetts, Amherst
+      - term: Spring 2022
+        code: Mobile Computing
+        school: University of Electronic Science and Technology of China (UESTC), Chengdu, China
+  - name: Course Instructor & Facilitator
+    courses:
+      - term: Spring 2022
+        school: Huawei ICT Academy, Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana
+  - name: Undergraduate Teaching Assistant
+    courses:
+      - term: Fall 2021
+        code: Computer Networking
+        school: Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana
 ---
-
-## Fall 2026
-[COMPSCI 453](https://453.fyi/) - Computer Networks, by [Phuthipong Bovornkeeratiroj](https://people.cs.umass.edu/~phuthipong/)
-
-## Fall 2025
-[COMPSCI 560](https://infosec.cs.umass.edu/compsci560) - Introduction to Computer & Network Security, by [Dr. Parviz Kermani](https://www.cics.umass.edu/about/directory/parviz-kermani)

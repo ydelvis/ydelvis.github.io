@@ -1,7 +1,7 @@
 ---
 layout: page
-title: IoT Security & Abandonware
-description: Security risks of devices whose vendors have ceased support
+title: IoT Security
+description: Security and privacy risks across the IoT device lifecycle, from deployment to end-of-support
 img: assets/img/banner_iot_security.jpg
 importance: 4
 category: research
@@ -10,16 +10,12 @@ related_publications: true
 
 {% include figure.liquid loading="eager" path="assets/img/banner_iot_security.jpg" class="img-fluid rounded z-depth-1 mb-4" alt="City lights from space representing the global scale of IoT connectivity" %}
 
-IoT devices increasingly face a common but underexplored threat: **vendor abandonment**. When manufacturers discontinue support—ceasing firmware updates, shutting down cloud backends, or simply going out of business—the devices they leave behind become *abandonware*. These orphaned devices continue operating in homes and critical infrastructure, often running with unpatched vulnerabilities, inaccessible management interfaces, and no viable path to remediation.
+Internet-of-Things (IoT) devices are now deeply embedded in homes, workplaces, and critical infrastructure — yet they routinely ship with weak defaults, minimal patching support, and little visibility into what they actually do on a network. This project studies **security across the IoT device lifecycle**, from how devices are provisioned and managed to what happens once vendor support ends.
 
-This project investigates the **security implications of IoT abandonware**, examining how abandoned devices create long-tail risks in real-world deployments. Key questions we address include:
+Key questions we address include:
 
-- How prevalent is IoT abandonware in practice, and how do we characterize it?
-- What attack surface do abandoned devices expose, and how does that surface evolve over time?
-- What can users, vendors, and platform providers do when traditional security response mechanisms are absent?
+- How do IoT devices expose users and networks to risk, and how does that risk evolve as devices age?
+- What visibility and enforcement mechanisms can catch misbehavior or vulnerabilities without vendor cooperation?
+- How should responsibility for long-term device security be shared among users, vendors, and platform providers?
 
-Our work explores detection, measurement, and responsible disclosure strategies for a threat landscape where the normal expectation of vendor-driven patching no longer applies.
-
-#### Related Work
-
-{% cite kang2026iot %}
+One focus area within this project is **IoT abandonware** — devices whose vendors have ceased support entirely, discontinuing firmware updates, shutting down cloud backends, or going out of business altogether. These orphaned devices continue operating with unpatched vulnerabilities and no viable path to remediation. This work characterizes the prevalence and attack surface of IoT abandonware, and is detailed in {% cite kang2026iot %}.

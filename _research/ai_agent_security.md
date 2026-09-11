@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Access Control & Security of AI Agents
+title: AI Agent Security and Access Control
 description: Enforcing least-privilege and auditable access for LLM-based autonomous agents
 img: assets/img/ai-agent-sec.svg
 importance: 1

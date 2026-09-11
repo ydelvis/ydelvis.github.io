@@ -2,23 +2,29 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
+      {% assign chip_name = site.first_name | append: ' ' | append: site.last_name %}
+      {% if site.title != 'blank' %}
+        {% assign chip_name = site.title %}
+      {% endif %}
+      {% capture chip_inner %}
+        {% if site.avatar %}
+          <img
+            class="bento-nav-chip-avatar"
+            alt="{{ chip_name }}"
+            src="{{ site.avatar | prepend: '/assets/img/' | relative_url | bust_file_cache }}"
+          >
+        {% endif %}
+        <span class="bento-nav-chip-name">{{ chip_name }}</span>
+      {% endcapture %}
       {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
+        <!-- Identity chip, always visible -->
+        <a class="navbar-brand bento-nav-chip is-visible" href="{{ site.baseurl }}/">
+          {{ chip_inner }}
+        </a>
+      {% elsif page.layout == 'home' %}
+        <!-- Identity chip, revealed once the hero has scrolled past -->
+        <a class="navbar-brand bento-nav-chip" href="{{ site.baseurl }}/" id="bento-nav-chip">
+          {{ chip_inner }}
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->

@@ -760,6 +760,26 @@ footer.sticky-bottom {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
+
+        .links {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 6px;
+          margin-top: 0.5rem;
+
+          a.btn {
+            flex: 1 1 0;
+            text-align: center;
+            margin-bottom: 0;
+            margin-left: 0;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            padding-top: 0.15rem;
+            padding-bottom: 0.15rem;
+            font-size: 0.75rem;
+          }
+        }
       }
 
       .title {
@@ -887,6 +907,7 @@ pre {
   background-color: var(--global-code-bg-color);
   border-radius: 6px;
   padding: 6px 12px;
+  overflow-x: auto;
 
   pre,
   code {
@@ -1206,9 +1227,6 @@ ninja-keys::part(ninja-input-wrapper) {
 
 .newsletter-form-input,
 .bibsearch-form-input {
-  color: var(--global-newsletter-text-color);
-  background: var(--global-newsletter-bg-color);
-  border: 1px solid var(--global-newsletter-text-color);
   outline: none;
   margin: 0px 10px 0px 0px;
   width: 100%;
@@ -1220,7 +1238,23 @@ ninja-keys::part(ninja-input-wrapper) {
   padding: 8px 12px;
 }
 
+.newsletter-form-input {
+  color: var(--global-newsletter-text-color);
+  background: var(--global-newsletter-bg-color);
+  border: 1px solid var(--global-newsletter-text-color);
+}
+
 .newsletter-form-input:focus {
+  border-color: var(--global-theme-color) !important;
+}
+
+.bibsearch-form-input {
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+}
+
+.bibsearch-form-input:focus {
   border-color: var(--global-theme-color) !important;
 }
 
