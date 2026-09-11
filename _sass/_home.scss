@@ -77,6 +77,20 @@ html[data-theme="dark"] {
   }
 }
 
+.bento-resume-btn--sm {
+  padding: 8px 18px;
+  gap: 7px;
+  font-size: 12.5px;
+}
+
+.bento-resume-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--home-border);
+}
+
 .bento-intro-social {
   display: flex;
   flex-direction: column;
@@ -283,6 +297,10 @@ html[data-theme="dark"] {
 
   p {
     margin: 0;
+  }
+
+  p + p {
+    margin-top: 1em;
   }
 }
 
@@ -519,10 +537,11 @@ html[data-theme="dark"] {
 }
 
 /*******************************************************************************
- * Teaching page
+ * Role-list pattern: shared by the Teaching and Service pages (badge + title
+ * + org, grouped under right-aligned section headings)
  ******************************************************************************/
 
-.teaching-role-heading {
+.role-section-heading {
   color: var(--global-divider-color);
   border-top: 1px solid var(--global-divider-color);
   padding-top: 1rem;
@@ -536,12 +555,12 @@ html[data-theme="dark"] {
   }
 }
 
-.teaching-list {
+.role-list {
   display: flex;
   flex-direction: column;
 }
 
-.teaching-item {
+.role-item {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -553,14 +572,14 @@ html[data-theme="dark"] {
   }
 }
 
-.teaching-term {
+.role-badge {
   flex: 0 0 auto;
   align-self: center;
   min-width: 100px;
   text-align: center;
 }
 
-.teaching-body {
+.role-body {
   font-size: 15px;
   color: var(--home-text);
   line-height: 1.5;
@@ -574,11 +593,11 @@ html[data-theme="dark"] {
   }
 }
 
-.teaching-course {
+.role-title {
   font-weight: 600;
 }
 
-.teaching-school {
+.role-org {
   font-size: 13px;
   color: var(--home-muted);
   margin-top: 2px;

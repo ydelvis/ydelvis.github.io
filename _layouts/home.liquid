@@ -14,7 +14,7 @@ layout: default
           {% include figure.liquid loading="eager" path=profile_image_path class="bento-avatar" alt=avatar_alt cache_bust=true %}
         {% endif %}
         <div class="bento-intro-heading">
-          <div class="bento-eyebrow">PhD student &mdash; security &amp; systems</div>
+          <div class="bento-eyebrow">PhD student &mdash; systems security &amp; privacy</div>
           <h1 class="bento-name">
             {% if site.title == 'blank' %}
               {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
@@ -48,21 +48,6 @@ layout: default
       {% endif %}
 
       <div class="bento-intro-footer">
-        {% if site.cv_pdf %}
-          <a
-            href="{{ site.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="bento-resume-btn"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3v12"></path>
-              <path d="M7 10l5 5 5-5"></path>
-              <path d="M5 21h14"></path>
-            </svg>
-            <span>Resume</span>
-          </a>
-        {% endif %}
         {% if page.social %}
           <div class="social bento-intro-social">
             <div class="contact-icons">{% include social.liquid %}</div>
@@ -96,6 +81,23 @@ layout: default
               </div>
             {% endfor %}
           </div>
+          {% if site.cv_pdf %}
+            <div class="bento-resume-wrap">
+              <a
+                href="{{ site.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bento-resume-btn bento-resume-btn--sm"
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3v12"></path>
+                  <path d="M7 10l5 5 5-5"></path>
+                  <path d="M5 21h14"></path>
+                </svg>
+                <span>Resume</span>
+              </a>
+            </div>
+          {% endif %}
         </div>
       {% endif %}
 

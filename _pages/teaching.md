@@ -29,10 +29,14 @@ roles:
   - name: Course Instructor & Facilitator
     courses:
       - term: Spring 2022
-        school: Huawei ICT Academy, Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana
+        code: Huawei ICT Academy
+        school: Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana
   - name: Undergraduate Teaching Assistant
     courses:
       - term: Fall 2021
-        code: Computer Networking
+        code: TE 453
+        name: Computer Networking
+        instructor: Dr. Kwasi Adu-Boahen Opare
+        instructor_url: https://webapps.knust.edu.gh/staff/dirsearch/profile/summary/0362d1246189.html
         school: Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana
 ---

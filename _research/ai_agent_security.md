@@ -1,14 +1,14 @@
 ---
 layout: page
 title: AI Agent Security and Access Control
-description: Enforcing least-privilege and auditable access for LLM-based autonomous agents
-img: assets/img/ai-agent-sec.svg
+description: Enforcing least-privilege authorization and auditable access for LLM-based autonomous agents
+img: assets/img/ai-agents-sec.jpg
 importance: 1
 category: research
 related_publications: false
 ---
 
-{% include figure.liquid loading="eager" path="assets/img/ai-agent-sec.svg" class="img-fluid rounded z-depth-1 mb-4" alt="Abstract digital representation of an AI agent operating within a controlled access environment" %}
+{% include figure.liquid loading="eager" path="assets/img/ai-agents-sec.jpg" class="img-fluid rounded z-depth-1 mb-4" alt="Abstract digital representation of an AI agent operating within a controlled access environment" %}
 
 AI agents—systems where large language models (LLMs) are given tools, memory, and the ability to take autonomous actions—are rapidly moving from demos to production. These agents can browse the web, execute code, call APIs, manage files, and interact with cloud services on a user's behalf. But with this capability comes a fundamental security question: **what should an agent be allowed to do, and how do we enforce it?**
 

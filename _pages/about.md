@@ -31,4 +31,6 @@ office_address: "CSL E250 · 130 Governors Drive, Amherst, MA"
 social: true
 ---
 
-I study least-privilege access control and information flow across cloud, serverless, IoT, and AI-agent systems — aiming to make complex infrastructure secure without making it harder to use. My work sits at the intersection of systems research and practical deployment, grounded in measurement studies of real-world platforms and translated into concrete enforcement mechanisms.
+I study systems security and privacy, with a focus on least-privilege access control and information flow in complex computing and networked systems. My work spans cloud and serverless computing, IoT, AI-agent systems, and network security.
+
+Across these domains, I investigate how security policies are designed, analyzed, and enforced. I use measurement and empirical analysis of real-world systems to understand where existing approaches fall short, and then design, implement, and evaluate security mechanisms and protocols to address these gaps. Ultimately, my goal is to reduce unnecessary privileges, constrain information flows, and make complex systems more secure without making them harder to use.

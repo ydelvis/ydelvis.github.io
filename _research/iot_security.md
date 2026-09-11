@@ -5,7 +5,7 @@ description: Security and privacy risks across the IoT device lifecycle, from de
 img: assets/img/banner_iot_security.jpg
 importance: 4
 category: research
-related_publications: true
+related_publications: false
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/banner_iot_security.jpg" class="img-fluid rounded z-depth-1 mb-4" alt="City lights from space representing the global scale of IoT connectivity" %}
@@ -18,4 +18,10 @@ Key questions we address include:
 - What visibility and enforcement mechanisms can catch misbehavior or vulnerabilities without vendor cooperation?
 - How should responsibility for long-term device security be shared among users, vendors, and platform providers?
 
-One focus area within this project is **IoT abandonware** — devices whose vendors have ceased support entirely, discontinuing firmware updates, shutting down cloud backends, or going out of business altogether. These orphaned devices continue operating with unpatched vulnerabilities and no viable path to remediation. This work characterizes the prevalence and attack surface of IoT abandonware, and is detailed in {% cite kang2026iot %}.
+One focus area within this project is **IoT abandonware** — devices whose vendors have ceased support entirely, discontinuing firmware updates, shutting down cloud backends, or going out of business altogether. These orphaned devices continue operating with unpatched vulnerabilities and no viable path to remediation. This work characterizes the prevalence and attack surface of IoT abandonware.
+
+## Published Works
+
+<div class="publications">
+{% bibliography --query @*[project=iot_security] %}
+</div>
