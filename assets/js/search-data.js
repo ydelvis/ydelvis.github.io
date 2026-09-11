@@ -447,24 +447,24 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-when-apps-outlive-vendors-security-implications-of-iot-abandonware-has-been-accepted-to-acm-ccs-2026",
           title: 'Our paper, “When Apps Outlive Vendors: Security Implications of IoT Abandonware,” has been...',
           description: "",
-          section: "News",},{id: "research-access-control-amp-security-of-ai-agents",
-          title: 'Access Control &amp;amp; Security of AI Agents',
+          section: "News",},{id: "research-ai-agent-security-and-access-control",
+          title: 'AI Agent Security and Access Control',
           description: "Enforcing least-privilege and auditable access for LLM-based autonomous agents",
           section: "Research",handler: () => {
               window.location.href = "/research/ai_agent_security/";
-            },},{id: "research-access-control-for-serverless-cloud",
-          title: 'Access Control for Serverless Cloud',
-          description: "Detecting and mitigating overprivilege in cloud security policies",
+            },},{id: "research-serverless-cloud-security",
+          title: 'Serverless Cloud Security',
+          description: "Securing serverless architectures against misconfiguration, overprivilege, and emerging cloud-native threats",
           section: "Research",handler: () => {
               window.location.href = "/research/cloud_access_control/";
-            },},{id: "research-intent-based-networking-amp-security",
-          title: 'Intent-Based Networking &amp;amp; Security',
-          description: "Resolving conflicts and enforcing security in multi-intent network policies",
+            },},{id: "research-network-security",
+          title: 'Network Security',
+          description: "Securing network infrastructure against misconfiguration and conflicting policy across intent-driven and traditional architectures",
           section: "Research",handler: () => {
               window.location.href = "/research/intent_based_networking/";
-            },},{id: "research-iot-security-amp-abandonware",
-          title: 'IoT Security &amp;amp; Abandonware',
-          description: "Security risks of devices whose vendors have ceased support",
+            },},{id: "research-iot-security",
+          title: 'IoT Security',
+          description: "Security and privacy risks across the IoT device lifecycle, from deployment to end-of-support",
           section: "Research",handler: () => {
               window.location.href = "/research/iot_security/";
             },},{
@@ -487,6 +487,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/elvis-yeboah-duako", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=HdOcAiUAAAAJ", "_blank");
         },
       },{
         id: 'social-x',
