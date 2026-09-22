@@ -9,6 +9,6 @@ hidden: false
 
 entries:
   - period: Spring 2025
-    title: "Enforcing Least-Privilege in Serverless Cloud"
+    title: "Enforcing Least-Privilege Authorization in Serverless Cloud Applications"
     org: "Guest Speaker, Capture the Flag (CTF) Event — Women in Cybersecurity (WiCyS), UMass Amherst Chapter"
 ---
